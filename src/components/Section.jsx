@@ -36,7 +36,7 @@ const Wrapper = styled.div`
 
 const Hero_Text = styled.div`
   text-align: center;
-  padding-top: 15vh;
+  margin-top: 15vh;
   animation: fade 1s ease-in-out forwards;
   @keyframes fade {
     0% {
