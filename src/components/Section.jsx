@@ -71,6 +71,9 @@ const Hero_Buttons = styled.div`
     }
   }
   animation-delay: 0.9s;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const Hero_LeftBtn = styled.button`
   background-color: #171a20cc;
@@ -94,6 +97,9 @@ const Hero_LeftBtn = styled.button`
   }
   font-weight: 700;
   letter-spacing: 2px;
+  @media (max-width: 768px) {
+    margin: 10px 0;
+  }
 `;
 const Hero_RightBtn = styled(Hero_LeftBtn)`
   background-color: #ffffffcc;
