@@ -113,7 +113,7 @@ const Nav_Link = styled.p`
   padding: 5px 15px;
   margin-top: 15px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 16px;
   transition: background 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 500;

@@ -1,18 +1,12 @@
-import { ArrowDownwardRounded } from "@material-ui/icons";
 import styled from "styled-components";
 
 import arrow from "../images/down-arrow.svg";
 import aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const Section = ({ car }) => {
-  useEffect(() => {
-    aos.init({ duration: 2000 });
-  }, []);
   return (
     <Wrapper img={car.image}>
-      <Hero_Text data-aos="fade-down">
+      <Hero_Text>
         <Hero_Header>{car.title}</Hero_Header>
         <Sub_Header>{car.desc}</Sub_Header>
       </Hero_Text>
@@ -43,18 +37,6 @@ const Wrapper = styled.div`
 const Hero_Text = styled.div`
   text-align: center;
   margin-top: 15vh;
-  animation: fade 1s ease-in-out forwards;
-  @keyframes fade {
-    0% {
-      opacity: 0;
-      transform: translateY(-4rem);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  animation-delay: 0.8s;
 `;
 const Hero_Header = styled.h1``;
 const Sub_Header = styled.p``;
@@ -65,18 +47,6 @@ const Hero_Buttons = styled.div`
   align-items: center;
   margin-top: auto;
   margin-bottom: 10px;
-  animation: fade 1s ease-in-out forwards;
-  @keyframes fade {
-    0% {
-      opacity: 0;
-      transform: translateY(-4rem);
-    }
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  animation-delay: 0.9s;
   @media (max-width: 768px) {
     flex-direction: column;
   }

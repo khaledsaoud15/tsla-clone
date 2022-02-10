@@ -22,6 +22,7 @@ export const data = [
     image: modely,
     buttonLeft: "Costume order",
     buttonRight: "Exsiting Inventory",
+    fade: "fade-down",
   },
   {
     id: 3,
