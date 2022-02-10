@@ -2,11 +2,17 @@ import { ArrowDownwardRounded } from "@material-ui/icons";
 import styled from "styled-components";
 
 import arrow from "../images/down-arrow.svg";
+import aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Section = ({ car }) => {
+  useEffect(() => {
+    aos.init({ duration: 2000 });
+  }, []);
   return (
     <Wrapper img={car.image}>
-      <Hero_Text>
+      <Hero_Text data-aos="fade-down">
         <Hero_Header>{car.title}</Hero_Header>
         <Sub_Header>{car.desc}</Sub_Header>
       </Hero_Text>
